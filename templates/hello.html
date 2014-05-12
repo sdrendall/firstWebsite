@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='/static/style.css'>
+    </head>
+    <body>
+        <h1 id='header'><em>hello {{balls}}</em></h1>
+        <div class=page>
+        <a href='{{url_for("beer")}}'> beer </a>
+        {% for var in L %}
+            <h2 class='SubHeader'> {{var}} </h2>
+            {% endfor %}
+        </div>
+    </body>
+</html>
